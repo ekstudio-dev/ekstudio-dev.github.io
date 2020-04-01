@@ -6,7 +6,7 @@ import Dzain from "./../pages/Dzain";
 
 function AppRouter() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route path="/dzain" component={Dzain} />
         <Route path="/" component={Home} />
