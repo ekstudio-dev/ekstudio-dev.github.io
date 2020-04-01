@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.a653d0b8.chunk.js",
-    "main.js.map": "/static/js/main.a653d0b8.chunk.js.map",
+    "main.js": "/static/js/main.a996cf99.chunk.js",
+    "main.js.map": "/static/js/main.a996cf99.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.90234752.js",
     "runtime-main.js.map": "/static/js/runtime-main.90234752.js.map",
     "static/js/2.9d537cde.chunk.js": "/static/js/2.9d537cde.chunk.js",
     "static/js/2.9d537cde.chunk.js.map": "/static/js/2.9d537cde.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.44fb3add1eb0c207148437ef28f7a2b7.js": "/precache-manifest.44fb3add1eb0c207148437ef28f7a2b7.js",
+    "precache-manifest.04c122aff619a350b11f92a13ceff989.js": "/precache-manifest.04c122aff619a350b11f92a13ceff989.js",
     "service-worker.js": "/service-worker.js",
     "static/js/2.9d537cde.chunk.js.LICENSE.txt": "/static/js/2.9d537cde.chunk.js.LICENSE.txt",
     "static/media/blueprint-ruler.png": "/static/media/blueprint-ruler.14e23d84.png",
@@ -16,6 +16,6 @@
   "entrypoints": [
     "static/js/runtime-main.90234752.js",
     "static/js/2.9d537cde.chunk.js",
-    "static/js/main.a653d0b8.chunk.js"
+    "static/js/main.a996cf99.chunk.js"
   ]
 }
