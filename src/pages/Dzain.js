@@ -1,7 +1,8 @@
 import React from "react";
+import Blueprint from "./../components/background/Blueprint";
 
 function Dzain() {
-  return <h1>dzain</h1>;
+  return <Blueprint />;
 }
 
 export default Dzain;

@@ -1,7 +1,8 @@
 import React from "react";
+import Blueprint from "./../components/background/Blueprint";
 
 function Home() {
-  return <h1>home</h1>;
+  return <Blueprint />;
 }
 
 export default Home;
