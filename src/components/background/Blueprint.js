@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import bg from "./../../assets/blueprint-bg.png";
+import bg_ruler from "./../../assets/blueprint-bg-ruler.png";
 import logotext from "./../../assets/logo-text.png";
 import asset1 from "./../../assets/blueprint-asset1.png";
 import asset2 from "./../../assets/blueprint-asset2.png";
@@ -36,6 +37,17 @@ const LogoText = styled.div`
   opacity: 0.8;
 `;
 
+const BackgroundRulerY = styled.div`
+  background-image: url(${bg_ruler});
+  background-repeat: repeat-y;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+`;
+
 function Blueprint() {
   const rand = (min, max) => Math.floor(Math.random() * max) + min;
   const pos = (width, height) => {
@@ -47,31 +59,42 @@ function Blueprint() {
 
   return (
     <Background>
+      <BackgroundRulerY />
       <LogoText />
       <Element
         image={asset1}
         width={200}
         height={155}
         position={pos(200, 155)}
+        rotate={rand(0, 360)}
       />
       <Element
         image={asset2}
         width={140}
         height={190}
         position={pos(140, 190)}
+        rotate={rand(0, 360)}
       />
-      <Element image={asset3} width={120} height={78} position={pos(120, 78)} />
+      <Element
+        image={asset3}
+        width={120}
+        height={78}
+        position={pos(120, 78)}
+        rotate={rand(0, 360)}
+      />
       <Element
         image={pencil}
         width={100}
         height={135}
         position={pos(100, 135)}
+        rotate={rand(0, 360)}
       />
       <Element
         image={ruler}
         width={300}
         height={201}
         position={pos(300, 201)}
+        rotate={rand(0, 360)}
       />
     </Background>
   );

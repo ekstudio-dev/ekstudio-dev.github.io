@@ -6,26 +6,25 @@ const Object = styled.div`
   background-image: url(${({ image }) => image});
   background-repeat: no-repeat;
   background-size: contain;
-  height: ${({ height }) => height}px;
+  height: ${({ elHeight }) => elHeight}px;
   position: absolute;
   top: 0;
+  transform: rotate(${({ elRotate }) => elRotate}deg) scale(0.8);
   left: 0;
-  width: ${({ width }) => width}px;
+  width: ${({ elWidth }) => elWidth}px;
 `;
 
 function Element({ image, height, width, rotate, position }) {
-  const handleStart = e => {};
-  const handleDrag = e => {};
-  const handleStop = e => {};
-
   return (
-    <Draggable
-      defaultPosition={position}
-      onStart={handleStart}
-      onDrag={handleDrag}
-      onStop={handleStop}
-    >
-      <Object image={image} width={width} height={height} />
+    <Draggable defaultPosition={position}>
+      <div>
+        <Object
+          image={image}
+          elWidth={width}
+          elHeight={height}
+          elRotate={rotate}
+        />
+      </div>
     </Draggable>
   );
 }
